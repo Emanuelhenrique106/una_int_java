@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class DadosPessoais {
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+
+        // Lendo nome
+        System.out.print("Digite seu nome: ");
+        String nome = entrada.nextLine();
+
+        // Lendo idade
+        System.out.print("Digite sua idade: ");
+        int idade = entrada.nextInt();
+
+        // Lendo altura
+        System.out.print("Digite sua altura (em metros, use ponto): ");
+        double altura = entrada.nextDouble();
+
+        // Exibindo os dados
+        System.out.println("\n--- Seus Dados ---");
+        System.out.println("Nome: " + nome);
+        System.out.println("Idade: " + idade + " anos");
+        System.out.println("Altura: " + altura + " m");
+
+        entrada.close();
+    }
+}
